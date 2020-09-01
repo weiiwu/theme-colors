@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="default.css" />
+
+    <link rel="stylesheet" href="" type="text/css" id="theme-style">
     <title>Bakery Woo</title>
   </head>
   <body>
@@ -39,13 +41,13 @@
             <h5 style="text-align: center; line-height: 0">Bakery Theme</h5>
 
             <div id="theme-options-wrapper">
-              <div id="light-mode" class="theme-dot"></div>
-              <div id="blue-mode" class="theme-dot"></div>
-              <div id="green-mode" class="theme-dot"></div>
-              <div id="purple-mode" class="theme-dot"></div>
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
 
-            <p>*Theme settings will be saved for<br />your next visit</p>
+            <p id="settings-note">*Theme settings will be saved for<br />your next visit</p>
           </div>
 
           <div class="right-column">
@@ -223,5 +225,7 @@
         </form>
       </div>
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
